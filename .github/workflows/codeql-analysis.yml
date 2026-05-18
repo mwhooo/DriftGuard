@@ -33,7 +33,7 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: 🛡️ Initialize CodeQL
-      uses: github/codeql-action/init@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # v4
+      uses: github/codeql-action/init@9e0d7b8d25671d64c341c19c0152d693099fb5ba # v4
       with:
         languages: ${{ matrix.language }}
         # Override default queries with security-focused ones
@@ -46,7 +46,7 @@ jobs:
       run: dotnet build BicepGuard.csproj --configuration Release --no-restore
 
     - name: 🔍 Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # v4
+      uses: github/codeql-action/analyze@9e0d7b8d25671d64c341c19c0152d693099fb5ba # v4
       with:
         category: "/language:${{matrix.language}}"
 
