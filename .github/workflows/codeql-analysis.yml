@@ -28,12 +28,12 @@ jobs:
       uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
     - name: ⚙️ Setup .NET
-      uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5
+      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v5
       with:
         dotnet-version: '8.0.x'
 
     - name: 🛡️ Initialize CodeQL
-      uses: github/codeql-action/init@8aad20d150bbac5944a9f9d289da16a4b0d87c1e # v4
+      uses: github/codeql-action/init@7188fc363630916deb702c7fdcf4e481b751f97a # v4
       with:
         languages: ${{ matrix.language }}
         # Override default queries with security-focused ones
