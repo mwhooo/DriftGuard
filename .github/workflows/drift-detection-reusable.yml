@@ -95,7 +95,7 @@ jobs:
         }
 
     - name: 🔧 Setup .NET
-      uses: actions/setup-dotnet@baa11fbfe1d6520db94683bd5c7a3818018e4309 # v5
+      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v5
       with:
         dotnet-version: '8.0.x'
 
