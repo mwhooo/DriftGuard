@@ -81,6 +81,17 @@ param nsgConfig = {
       destinationAddressPrefix: '*'
     }
     {
+      name: 'AllowSSH'
+      priority: 120
+      access: 'Allow'
+      direction: 'Inbound'
+      protocol: 'Tcp'
+      sourcePortRange: '*'
+      destinationPortRange: '22'
+      sourceAddressPrefix: '*'
+      destinationAddressPrefix: '*'
+    }
+    {
       name: 'DenyAllInbound'
       priority: 1000
       access: 'Deny'

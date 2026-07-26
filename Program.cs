@@ -9,8 +9,10 @@ namespace BicepGuard;
 /// command-line argument definitions, validation, and handling logic is properly
 /// organized in separate, and more testable components.
 /// </summary>
-internal class Program {
-    static async Task<int> Main(string[] args) {
+internal class Program
+{
+    static async Task<int> Main(string[] args)
+    {
         // Instantiate the command handler and build the root command
         var command = new BicepGuardCommand();
         var rootCommand = command.BuildRootCommand();
